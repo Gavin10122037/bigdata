@@ -1,0 +1,5 @@
+# load sample table to hdfs
+type=command
+command=bash ./../src/main_ods_hdfs.sh ${event_day} 2 2 sample_sql_name
+retries=3 #如果出错，重试3次
+retry.backoff=10000

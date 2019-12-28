@@ -1,0 +1,5 @@
+# load sample to hdfs
+type=command
+command=bash ./../src/main_sample.sh ${event_day} ${event_hour}
+retries=3
+retry.backoff=10000

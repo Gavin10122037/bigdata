@@ -1,0 +1,6 @@
+# load sample to hdfs
+type=command
+command=echo "ods sample successful!!!!"
+dependencies=ods_sample
+retries=3
+retry.backoff=10000
