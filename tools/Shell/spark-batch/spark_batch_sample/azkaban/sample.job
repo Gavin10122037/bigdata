@@ -1,0 +1,5 @@
+# load sample to hdfs
+type=command
+command=bash ./../src/run_spark_job.sh source_path #输入源文件路径
+retries=3
+retry.backoff=10000
